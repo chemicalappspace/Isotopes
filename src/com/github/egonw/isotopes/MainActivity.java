@@ -2,8 +2,7 @@ package com.github.egonw.isotopes;
 
 import java.io.IOException;
 
-import org.openscience.cdk.config.IsotopeFactory;
-import org.openscience.cdk.silent.SilentChemObjectBuilder;
+import org.openscience.cdk.config.BODRIsotopes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,14 +20,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // better to be slow at start up then when returning results
-		IsotopeFactory factory = null;
 		try {
-			factory = IsotopeFactory.getInstance(SilentChemObjectBuilder.getInstance());
+			BODRIsotopes.getInstance();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

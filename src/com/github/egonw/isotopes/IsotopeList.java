@@ -2,9 +2,8 @@ package com.github.egonw.isotopes;
 
 import java.io.IOException;
 
-import org.openscience.cdk.config.IsotopeFactory;
+import org.openscience.cdk.config.BODRIsotopes;
 import org.openscience.cdk.interfaces.IIsotope;
-import org.openscience.cdk.silent.SilentChemObjectBuilder;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -42,9 +41,9 @@ public class IsotopeList extends Activity {
 			elementSymbol = elementSymbol.substring(0, 1).toUpperCase() +
 				elementSymbol.substring(1).toLowerCase();
 		}
-		IsotopeFactory factory = null;
+		BODRIsotopes factory = null;
 		try {
-			factory = IsotopeFactory.getInstance(SilentChemObjectBuilder.getInstance());
+			factory = BODRIsotopes.getInstance();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
