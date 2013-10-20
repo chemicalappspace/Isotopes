@@ -19,7 +19,7 @@ package com.github.egonw.isotopes;
 
 import java.io.IOException;
 
-import org.openscience.cdk.config.BODRIsotopes;
+import org.openscience.cdk.config.Isotopes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         // better to be slow at start up then when returning results
 		try {
-			BODRIsotopes.getInstance();
+			Isotopes.getInstance();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -19,7 +19,7 @@ package com.github.egonw.isotopes;
 
 import java.io.IOException;
 
-import org.openscience.cdk.config.BODRIsotopes;
+import org.openscience.cdk.config.Isotopes;
 import org.openscience.cdk.interfaces.IIsotope;
 
 import android.annotation.SuppressLint;
@@ -58,9 +58,9 @@ public class IsotopeList extends Activity {
 			elementSymbol = elementSymbol.substring(0, 1).toUpperCase() +
 				elementSymbol.substring(1).toLowerCase();
 		}
-		BODRIsotopes factory = null;
+		Isotopes factory = null;
 		try {
-			factory = BODRIsotopes.getInstance();
+			factory = Isotopes.getInstance();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
