@@ -1,6 +1,11 @@
 = Isotopes =
 
-A CDK based Android app that lists isotopes.
+A Chemistry Development Kit (CDK) based Android app that lists isotopes.
+
+The used libraries are provided by the CDK project. The CDK jars are compiled
+from the CDK source code repository at http://github.com/cdk/cdk/ and the vecmath
+jar is copied from there too, with the source code available from
+https://sourceforge.net/p/cdk/svn/HEAD/tree/vecmath/trunk/.
 
 = License =
 
