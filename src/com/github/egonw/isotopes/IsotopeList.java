@@ -50,7 +50,7 @@ public class IsotopeList extends Activity {
 		TextView editText = (TextView) findViewById(R.id.output);
 		editText.setTextSize(25);
 		if (elementSymbol.length() > 3) {
-			editText.setText("Unlikely element: " + elementSymbol);
+			editText.setText("Unrecognized element symbol: " + elementSymbol);
 			return;
 		} else if (elementSymbol.length() == 1) {
 			elementSymbol = elementSymbol.toUpperCase();
