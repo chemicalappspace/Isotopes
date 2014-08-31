@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.text.Html;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -71,16 +72,16 @@ public class IsotopeList extends Activity {
 				isotopeList = "No isotopes found for " + elementSymbol + ".";
 			}
 			for (IIsotope isotope : isotopes) {
-				isotopeList += isotope.getMassNumber() +
+				isotopeList += "<sup>" + isotope.getMassNumber() + "</sup>" +
 					isotope.getSymbol() + ": ";
 				if (isotope.getExactMass() != null)
 					isotopeList += isotope.getExactMass();
 				if (isotope.getNaturalAbundance() != null) {
-					isotopeList += ", abundance: " + isotope.getNaturalAbundance() + "\n";
+					isotopeList += ", abundance: " + isotope.getNaturalAbundance() + "<br />";
 				}
 			}
 		}
-		editText.setText(isotopeList);
+		editText.setText(Html.fromHtml(isotopeList));
 	}
 
 	@Override
