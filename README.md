@@ -1,4 +1,4 @@
-= Isotopes =
+# Isotopes
 
 A Chemistry Development Kit (CDK) based Android app that lists isotopes.
 
@@ -7,7 +7,7 @@ from the CDK source code repository at http://github.com/cdk/cdk/ and the vecmat
 jar is copied from there too, with the source code available from
 https://sourceforge.net/p/cdk/svn/HEAD/tree/vecmath/trunk/.
 
-= License =
+## License
 
 This app is licensed as GPL v3.
 
