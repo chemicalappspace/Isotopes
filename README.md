@@ -14,5 +14,5 @@ This app is licensed as GPL v3.
 Used libraries (see libs/) are licensed separately:
 
 - Android Support 4.0
-- CDK 1.5 (license: LGPL v2.1 or later)
-- Vecmath (license: public domain)
+- CDK 1.5.8++ (license: LGPL v2.1 or later, https://github.com/cdk/cdk/, commit 210a93019aaf62a5ef57162f6eb9788b3e55df9e)
+- Vecmath 1.2-1.15 (license: public domain, https://github.com/egonw/vecmath/)
