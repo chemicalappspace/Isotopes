@@ -1,0 +1,9 @@
+<resources>
+<script/>
+<string name="app_name">Isotopes</string>
+<string name="action_settings">Configurações</string>
+<string name="hello_world">Olá mundo!</string>
+<string name="elementLabel">Dê um símbolo de um elemento:</string>
+<string name="giveIsotopes">Listar os Isótopos...</string>
+<string name="title_activity_isotope_list">Lista de Isótopos</string>
+</resources>
